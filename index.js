@@ -1,13 +1,13 @@
-var popup_box = document.getElementById("popupBox");
-var submit_btn = document.getElementById("btn");
+var popupbox = document.getElementById("popup_display");
+var submit_btn = document.getElementById("btnSubmit");
+var ok_btn = document.getElementById("ok_btn");
 
-submit_btn.onclick = function()
+submit_btn.onclick =  function()
 {
-    popup_box.style.display = 'visible';
+    popupbox.style.display = "block";
 }
 
-var ok_btn = document.getElementById("btnOk");
-
-function closePopUp_box(){
-    popup_box.style.display = "none";
+ok_btn.onclick =  function()
+{
+    popupbox.style.display = "none";
 }
